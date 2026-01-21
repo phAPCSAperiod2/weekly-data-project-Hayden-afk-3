@@ -36,7 +36,7 @@ public class App {
         //         - Re-prompt if the value is invalid
         // -------------------------------------------------------------
             for (int i = 0; i < weekData.length; i++) {
-                System.out.print("Enter data for day " + (i + 1) + ", \nhow many hours did you sleep? ");
+                System.out.print("Enter data for day " + (i + 1) + ", \nHow many hours did you sleep? ");
                 double input = scanner.nextDouble();
                 while (input < 0) {
                     System.out.print("Invalid input. Please enter a non-negative value for day " + (i + 1) + ": ");
