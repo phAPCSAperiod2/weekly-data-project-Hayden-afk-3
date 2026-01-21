@@ -17,8 +17,6 @@ public class WeeklyData {
     private double max;
     private double min;
     private double sleepData;
-    private int assignmentsDue;
-    private int assignmentsDone;
 
 
     // -------------------------------------------------------------
@@ -77,7 +75,12 @@ public class WeeklyData {
         // Hint: You may call getTotal()
         if (data.length == 0) {
             return 0.0;
-        } else {
+        } 
+        // fromat to limit to 3 decimal places
+        else if (data.length > 0) {
+            return Math.round((getTotal() / data.length) * 1000.0) / 1000.0;
+        } 
+        else {
             return getTotal() / data.length;
         }
     }
